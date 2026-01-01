@@ -1,0 +1,41 @@
+### --- Rust ---
+# Ignora a pasta de compilação do Cargo (onde ficam os binários e dependências)
+**/target/
+
+### --- C / C++ ---
+# Arquivos objeto e bibliotecas estáticas/dinâmicas
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+
+# Executáveis (comuns em Linux/macOS e Windows)
+*.exe
+*.out
+*.app
+
+### --- Build Systems (CMake/Make) ---
+# Ignora pastas de build criadas manualmente
+build/
+bin/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+# (Nota: se você escreve seus próprios Makefiles à mão, remova a linha acima)
+
+### --- IDEs e Editores ---
+# VS Code
+.vscode/
+# IntelliJ / CLion
+.idea/
+# Arquivos temporários do Vim
+*.swp
+*.swo
+
+### --- Sistema Operacional ---
+.DS_Store
+Thumbs.db
